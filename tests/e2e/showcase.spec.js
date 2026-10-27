@@ -43,3 +43,17 @@ test('iPhone 15 layout fits its CSS viewport without horizontal overflow', async
   expect(overflow).toBeLessThanOrEqual(0);
   await context.close();
 });
+
+test('iPhone 15 alert does not cover scene controls', async ({ browser }) => {
+  const context = await browser.newContext({ viewport: { width: 393, height: 852 }, deviceScaleFactor: 3, isMobile: true, hasTouch: true });
+  const page = await context.newPage();
+  await page.goto('/?preview=mobile');
+
+  const lastScene = await page.locator('.scene-card').last().boundingBox();
+  const alert = await page.locator('[data-error-panel]').boundingBox();
+
+  expect(lastScene).not.toBeNull();
+  expect(alert).not.toBeNull();
+  expect(alert.y).toBeGreaterThanOrEqual(lastScene.y + lastScene.height);
+  await context.close();
+});
