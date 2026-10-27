@@ -75,7 +75,7 @@ The project is a static Vite application with no runtime framework:
 
 ### Prerequisites
 
-- Node.js 20 or newer
+- Node.js 22.13 or newer
 - npm
 
 ### Install and run
@@ -104,7 +104,10 @@ npm run lint
 npm test
 npm run build
 npm run test:e2e
+npm audit --audit-level=moderate
 ```
+
+The dependency audit reports zero known vulnerabilities.
 
 Run the complete gate with:
 
