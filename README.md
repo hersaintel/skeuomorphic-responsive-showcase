@@ -2,6 +2,8 @@
 
 A source-owned HTML, CSS, and JavaScript interface that demonstrates one modern-skeuomorphic material system adapting across desktop, tablet, and a real iPhone 15 logical viewport.
 
+**Repository:** https://github.com/hersaintel/skeuomorphic-responsive-showcase
+
 ## Responsive previews
 
 The interface changes navigation, information density, spacing, control arrangement, and framing for each target—it does not scale a single desktop canvas.
