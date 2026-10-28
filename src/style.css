@@ -180,28 +180,29 @@ h1 { margin: 0; font-size: 18px; letter-spacing: -.02em; }
 .showcase[data-preview="mobile"] .showcase-header { min-height:54px; display:flex; justify-content:center; }
 .showcase[data-preview="mobile"] .brand-lockup,.showcase[data-preview="mobile"] .showcase-header::after { display:none; }
 .showcase[data-preview="mobile"] .preview-switcher { width:100%; max-width:369px; }
-.showcase[data-preview="mobile"] .preview-tab { min-width:0; flex:1; padding:8px 6px; }
+.showcase[data-preview="mobile"] .preview-tab { min-width:0; min-height:44px; flex:1; padding:8px 6px; }
 .showcase[data-preview="mobile"] .preview-tab span { font-size:11px; }
 .showcase[data-preview="mobile"] .device-stage { overflow:visible; }
 .showcase[data-preview="mobile"] .device-frame { width:min(100%,369px); height:calc(100vh - 89px); min-height:650px; padding:8px; border-radius:43px; background:linear-gradient(135deg,#929ba2,#e9edef 23%,#767f86 58%,#d9dee1); box-shadow:-5px -5px 12px rgba(255,255,255,.6),12px 16px 28px rgba(48,59,67,.38),inset 1px 1px white; }
 .showcase[data-preview="mobile"] .camera-island { display:block; position:absolute; z-index:4; width:83px; height:23px; top:14px; left:50%; transform:translateX(-50%); border-radius:20px; background:#151a1d; box-shadow:inset 0 -1px 1px #3e474c; }
 .showcase[data-preview="mobile"] .camera-island::after { content:''; position:absolute; width:7px; height:7px; border-radius:50%; right:9px; top:8px; background:#1e3441; box-shadow:inset 0 0 2px #5082a1; }
 .showcase[data-preview="mobile"] .app-window { border-radius:35px; }
-.showcase[data-preview="mobile"] .app-bar { height:66px; padding:13px 14px 0; grid-template-columns:1fr auto; }
+.showcase[data-preview="mobile"] .app-bar { height:72px; padding:13px 14px 0; grid-template-columns:1fr auto; }
 .showcase[data-preview="mobile"] .app-identity { gap:7px; }
 .showcase[data-preview="mobile"] .app-identity > div { display:none; }
 .showcase[data-preview="mobile"] .app-emblem { width:30px; height:30px; }
-.showcase[data-preview="mobile"] .menu-button { display:grid !important; width:32px; height:32px; }
+.showcase[data-preview="mobile"] .menu-button { display:grid !important; width:44px; height:44px; }
 .showcase[data-preview="mobile"] .desktop-nav,.showcase[data-preview="mobile"] .profile-button strong { display:none; }
 .showcase[data-preview="mobile"] .app-actions { gap:5px; }
-.showcase[data-preview="mobile"] .icon-button { width:32px; height:32px; }
-.showcase[data-preview="mobile"] .profile-button span { width:31px; height:31px; }
-.showcase[data-preview="mobile"] .workspace-grid { display:block; height:calc(100% - 126px); }
+.showcase[data-preview="mobile"] .icon-button { width:44px; height:44px; }
+.showcase[data-preview="mobile"] .profile-button { min-width:44px; min-height:44px; justify-content:center; }
+.showcase[data-preview="mobile"] .profile-button span { width:34px; height:34px; }
+.showcase[data-preview="mobile"] .workspace-grid { display:block; height:calc(100% - 132px); }
 .showcase[data-preview="mobile"] .side-rail,.showcase[data-preview="mobile"] .activity-panel { display:none; }
 .showcase[data-preview="mobile"] .dashboard { height:100%; padding:18px 15px 25px; }
 .showcase[data-preview="mobile"] .dashboard-heading h2 { font-size:22px; }
 .showcase[data-preview="mobile"] .dashboard-heading p:last-child { max-width:220px; font-size:10px; line-height:1.4; }
-.showcase[data-preview="mobile"] .metal-button { width:38px; min-height:38px; padding:0; font-size:0; }
+.showcase[data-preview="mobile"] .metal-button { width:44px; min-height:44px; padding:0; font-size:0; }
 .showcase[data-preview="mobile"] .metal-button::after { content:'↻'; font-size:18px; }
 .showcase[data-preview="mobile"] .is-loading::after { display:none; }
 .showcase[data-preview="mobile"] .sync-status { font-size:8px; }
@@ -218,6 +219,7 @@ h1 { margin: 0; font-size: 18px; letter-spacing: -.02em; }
 .showcase[data-preview="mobile"] .dial span { top:7px; height:8px; }
 .showcase[data-preview="mobile"] .section-title { margin:16px 0 9px; }
 .showcase[data-preview="mobile"] .section-title h3 { font-size:14px; }
+.showcase[data-preview="mobile"] .text-button { min-height:44px; padding:0 4px; }
 .showcase[data-preview="mobile"] .scene-grid { grid-template-columns:repeat(2,1fr); gap:8px; }
 .showcase[data-preview="mobile"] .scene-card { min-height:66px; padding:9px; grid-template-columns:32px 1fr; gap:7px; }
 .showcase[data-preview="mobile"] .scene-icon { width:32px; height:32px; }

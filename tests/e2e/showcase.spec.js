@@ -44,6 +44,27 @@ test('iPhone 15 layout fits its CSS viewport without horizontal overflow', async
   await context.close();
 });
 
+test('iPhone 15 interactive controls meet the 44 CSS pixel touch target minimum', async ({ browser }) => {
+  const context = await browser.newContext({ viewport: { width: 393, height: 852 }, deviceScaleFactor: 3, isMobile: true, hasTouch: true });
+  const page = await context.newPage();
+  await page.goto('/?preview=mobile');
+
+  const undersized = await page.locator('button').evaluateAll((buttons) => buttons
+    .filter((button) => getComputedStyle(button).display !== 'none' && button.getClientRects().length)
+    .map((button) => {
+      const bounds = button.getBoundingClientRect();
+      return {
+        name: (button.innerText || button.getAttribute('aria-label') || '').trim(),
+        width: bounds.width,
+        height: bounds.height,
+      };
+    })
+    .filter(({ width, height }) => width < 44 || height < 44));
+
+  expect(undersized).toEqual([]);
+  await context.close();
+});
+
 test('iPhone 15 alert does not cover scene controls', async ({ browser }) => {
   const context = await browser.newContext({ viewport: { width: 393, height: 852 }, deviceScaleFactor: 3, isMobile: true, hasTouch: true });
   const page = await context.newPage();
