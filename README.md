@@ -12,9 +12,11 @@ The interface changes navigation, information density, spacing, control arrangem
 
 ![Desktop rendering of the Atelier Control Room with side navigation, climate controls, scenes, and activity panel](docs/images/desktop-1440x900.png)
 
-### Tablet — 834 × 1112 CSS pixels (1× DSF)
+### iPad Pro 10.5-inch — 834 × 1112 CSS pixels (2× DSF)
 
-![Tablet rendering of the Atelier Control Room with compact navigation, room rail, and two-column scene controls](docs/images/tablet-834x1112.png)
+The browser capture is **1668 × 2224 physical pixels**, matching the iPad Pro 10.5-inch display profile in portrait orientation.
+
+![iPad Pro 10.5-inch rendering of the Atelier Control Room with compact navigation, room rail, and two-column scene controls](docs/images/ipad-pro-10-5-834x1112-2x.png)
 
 ### iPhone 15 — 393 × 852 CSS pixels (3× DSF)
 
